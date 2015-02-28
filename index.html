@@ -34,31 +34,39 @@
 
 <p>This page hosts all programming exerices accomplished by Chris TANG in <a href = "https://class.coursera.org/ml-008"><u>Machine Learning</u></a> course directed by Prof. Andrew Ng at Coursera platform. Please noticed that the download button on the right will lead you download all my solutions. If you want to view my solution for a certain chapter please go into the specific chapter;</p>
 
+<div id="accordion">
 
 <h3>
+
 <a id="w2-exercise" class="anchor" href="#w2-exercise" aria-hidden="true"><span class="octicon octicon-link"></span></a>W2_Linear Regression</h3>
 
+<div>
 <p>In this exercise, <u>linear regression</u> along with <u>gradient descent</u> is implemented and applied to real life dataset. Specifically, the linear regression model is employed to predict the profit of a restaurant franchinse in a new city given the proft-population data. <em>Gradient Descent</em> is applied to optimal performance and minimize the cost function</em> For exercise "Linear regression with multiple variable", by learning from historical housing price data in Portland, Oregon, the learning hyphothesis is able to predict housing price with given <b>number of bedrooms</b>, and <b>size of the house</b></p>
 <pre><code>$ <span style = "background-color:black">problem description</span>: <a href = "https://github.com/csytang/Machine_Learning_Programming_Exercises/blob/master/Programming%20Exercise_01/ex1.pdf"><u>ex1.pdf</u></a> (*then click <font color = "#B2246B">View Raw</font>)
 $ <span style = "background-color:black">solution_explaination</span>:<a href = "https://github.com/csytang/Machine_Learning_Programming_Exercises/blob/master/Programming%20Exercise_01/Programming%20Exercise_01.pdf"><u>csytang's w2 solution explaination</u></a> (*then click <font color = "#B2246B">View Raw</font>)
 $ <span style = "background-color:black">solution</span>:  <a href = "https://github.com/csytang/Machine_Learning_Programming_Exercises/tree/master/Programming%20Exercise_01/mlclass-ex1"><u>csytang's w2 solution</u></a>
 </code></pre>
+</div>
 
 <h3>
 <a id="w3-exercise" class="anchor" href="#w3-exercise" aria-hidden="true"><span class="octicon octicon-link"></span></a>W3_Logistic Regression</h3>
-
+<div>
 <p>In this exercise, <u>logistic regression</u> is implemented and applied to two real life dataset. Concretely, the logistic regression model is applied to predict the probability of admission given two historial exam data. Furthermore, <b>regularized logistic regression</b> is used to solve overfitting problem when designing hypothesis for the problem. A deeper touch on regularized logistic regression is that using different regularize parameter(lambda) to see the influence of that parameter</p>
 <pre><code>$ <span style = "background-color:black">problem description</span>: <a href = "https://github.com/csytang/Machine_Learning_Programming_Exercises/blob/master/Programming%20Exercise_02/ex2.pdf"><u>ex2.pdf</u></a> (*then click <font color = "#B2246B">View Raw</font>)
 $ <span style = "background-color:black">solution</span>:  <a href = "https://github.com/csytang/Machine_Learning_Programming_Exercises/tree/master/Programming%20Exercise_02/mlclass-ex2"><u>csytang's w3 solution</u></a>
 </code></pre>
+</div>
 
 <h3>
 <a id="w4-exercise" class="anchor" href="#w4-exercise" aria-hidden="true"><span class="octicon octicon-link"></span></a>W4_Multi-class Classification and Neural Networks</h3>
-
+<div>
 <p>In this exercise, <u>one-vs-all logistic regression</u> and <u>neural networks</u> to recognize hand-written digits is implemented and applied to two real life dataset. Concretely, the one-vs-all logistic regression model is applied to recognize handwritten digits (from 0 to 9). Furthermore, <b>Neural Networks</b> uses feedforward Propagation to predict handwritten digits</p>
 <pre><code>$ <span style = "background-color:black">problem description</span>: <a href = "https://github.com/csytang/Machine_Learning_Programming_Exercises/blob/master/Programming%20Exercise_03/ex3.pdf"><u>ex3.pdf</u></a> (*then click <font color = "#B2246B">View Raw</font>)
 $ <span style = "background-color:black">solution</span>:  <a href = "https://github.com/csytang/Machine_Learning_Programming_Exercises/tree/master/Programming%20Exercise_03/mlclass-ex3"><u>csytang's w4 solution</u></a>
 </code></pre>
+</div>
+
+</div>
 
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
@@ -85,4 +93,122 @@ $ <span style = "background-color:black">solution</span>:  <a href = "https://gi
 
   
   </body>
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+
+$( "#accordion" ).accordion();
+
+
+
+var availableTags = [
+	"ActionScript",
+	"AppleScript",
+	"Asp",
+	"BASIC",
+	"C",
+	"C++",
+	"Clojure",
+	"COBOL",
+	"ColdFusion",
+	"Erlang",
+	"Fortran",
+	"Groovy",
+	"Haskell",
+	"Java",
+	"JavaScript",
+	"Lisp",
+	"Perl",
+	"PHP",
+	"Python",
+	"Ruby",
+	"Scala",
+	"Scheme"
+];
+$( "#autocomplete" ).autocomplete({
+	source: availableTags
+});
+
+
+
+$( "#button" ).button();
+$( "#radioset" ).buttonset();
+
+
+
+$( "#tabs" ).tabs();
+
+
+
+$( "#dialog" ).dialog({
+	autoOpen: false,
+	width: 400,
+	buttons: [
+		{
+			text: "Ok",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		{
+			text: "Cancel",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		}
+	]
+});
+
+// Link to open the dialog
+$( "#dialog-link" ).click(function( event ) {
+	$( "#dialog" ).dialog( "open" );
+	event.preventDefault();
+});
+
+
+
+$( "#datepicker" ).datepicker({
+	inline: true
+});
+
+
+
+$( "#slider" ).slider({
+	range: true,
+	values: [ 17, 67 ]
+});
+
+
+
+$( "#progressbar" ).progressbar({
+	value: 20
+});
+
+
+
+$( "#spinner" ).spinner();
+
+
+
+$( "#menu" ).menu();
+
+
+
+$( "#tooltip" ).tooltip();
+
+
+
+$( "#selectmenu" ).selectmenu();
+
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>  
 </html>
